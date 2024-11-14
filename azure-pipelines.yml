@@ -32,9 +32,11 @@ steps:
     scanCentralClientToken: '$(ScanCentral.ClientToken)'
     sscUrl: 'https://eg1-r8-mysql.fortifylab.net:8443/ssc'
     sscCiToken: '$(ScanCentral.SscCiToken)'
-    buildTool: 'mvn'
+    buildTool: 'dotnet'
     downloadDebugLogs: true
-    buildFile: './mail-lib/pom.xml'
+    buildFile: './IWA-DotNet-main/IWA-DotNet-main/IWA.NET.sln'
+
+    
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
