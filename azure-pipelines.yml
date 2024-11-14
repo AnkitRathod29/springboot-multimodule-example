@@ -34,7 +34,7 @@ steps:
     sscCiToken: '$(ScanCentral.SscCiToken)'
     buildTool: 'mvn'
     downloadDebugLogs: true
-    buildFile: './second-service/pom.xml'
+    buildFile: './mail-lib/pom.xml'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
